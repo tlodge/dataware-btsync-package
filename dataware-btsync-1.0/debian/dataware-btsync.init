@@ -1,0 +1,39 @@
+#! /bin/sh
+# /etc/init.d/dataware-btsync
+#
+### BEGIN INIT INFO
+# Provides:          dataware-btsync
+# Required-Start:    $local_fs $remote_fs $network
+# Required-Stop:     $local_fs $remote_fs $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# X-Interactive:     true
+# Short-Description: Start/stop dataware energy resource 
+### END INIT INFO#
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+DAEMON=/usr/bin/btsync
+NAME=btsync
+DESC="btsync daemon"
+SYNC_OPTS="--config /etc/btsync/config.cfg" # Additional options given to the server
+
+# Carry out specific functions when asked to by the system
+case "$1" in
+  start)
+    echo -n "Starting $DESC: "
+    start-stop-daemon --start --verbose --background --oknodo --exec $DAEMON -- $SYNC_OPTS 
+    echo "$NAME."
+    ;;
+  stop)
+    echo -n "Stopping $DESC: "
+    start-stop-daemon --stop --verbose --pidfile /var/run/btsync/btsync.pid
+    echo "$NAME."
+    ;;
+  
+  *)
+    echo "Usage: /etc/init.d/btsync {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0

@@ -1,0 +1,8 @@
+Package: dataware-btsync
+Version: 0.1-1
+Architecture: armel
+Maintainer: Tom Lodge <tlodge@gmail.com>
+Installed-Size: 76
+Section: network
+Priority: optional
+Description: Bittorrent sync daemon

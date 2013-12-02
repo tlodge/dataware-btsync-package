@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 02 Dec 2013 11:23:30 +0000
+Source: dataware-btsync
+Binary: dataware-btsync
+Architecture: source armel
+Version: 0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Tom Lodge <tlodge@gmail.com>
+Changed-By: unknown <unknown@unknown>
+Description: 
+ dataware-btsync - Bittorrent sync daemon
+Changes: 
+ dataware-btsync (0.1-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0
+Checksums-Sha1: 
+ df377b62ffcedcf0aa7f4cec80a6103eae73eb03 458 dataware-btsync_0.1-1.dsc
+ 55c9299f4cb024c0acb9b289586b465a9a8181e9 1089244 dataware-btsync_0.1-1.tar.gz
+ a7e624c4dd6b1344808221fd837151597233431c 1996 dataware-btsync_0.1-1_armel.deb
+Checksums-Sha256: 
+ 832f5d0d3808216a8fc12dd494de78878ff2f3efa125f50f081d81d4af7950e2 458 dataware-btsync_0.1-1.dsc
+ e01a5da18ae335bb24e2cc71938d501890f12ed05c96fc040555cddf49dd74f6 1089244 dataware-btsync_0.1-1.tar.gz
+ 4fd2b27bce1dc0ac4c71539594adf2f0e339d818aba368059afd8364d852dea9 1996 dataware-btsync_0.1-1_armel.deb
+Files: 
+ 8d1be700d3e998fd99a3b4e2a742b7ca 458 network optional dataware-btsync_0.1-1.dsc
+ 94ecb755f2e8416b1890c71797263478 1089244 network optional dataware-btsync_0.1-1.tar.gz
+ 32f81771d8cdc16f710ffd800e4211df 1996 network optional dataware-btsync_0.1-1_armel.deb

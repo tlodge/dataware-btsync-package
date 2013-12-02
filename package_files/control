@@ -1,0 +1,11 @@
+Source: dataware-btsync
+Maintainer: Tom Lodge <tlodge@gmail.com>
+Section: network 
+Priority: optional
+Standards-Version: 3.6.2
+
+Package: dataware-btsync 
+Version: 1.0
+Maintainer: Tom Lodge <tlodge@gmail.com>
+Architecture: armel 
+Description: Bittorrent sync daemon 
